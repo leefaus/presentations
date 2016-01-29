@@ -1,8 +1,8 @@
 # Presentations
-This repository contains [markdown](https://guides.github.com/features/mastering-markdown/) based presentations: 
+This repository contains [markdown](https://guides.github.com/features/mastering-markdown/) based presentations:
  - generated from [middleman](https://middlemanapp.com/)
  - rendered for slide shows with [remark](http://remarkjs.com/)
- - with responsive formatting via [bootstrap](http://v4-alpha.getbootstrap.com/)  
+ - responsive formatting via [bootstrap](http://v4-alpha.getbootstrap.com/)  
  - exported to PDF using [decktape](https://github.com/astefanutti/decktape)  
 
 Access to the rendered and exported collateral is limited to the [GitHub Employees](https://github.com/orgs/githubpartners/teams/github-employees) team by [jekyll auth](https://github.com/benbalter/jekyll-auth).
