@@ -1,5 +1,5 @@
 # Presentations
-This repository contains [markdown](https://help.github.com/articles/working-with-advanced-formatting/) based presentations: 
+This repository contains [markdown](https://guides.github.com/features/mastering-markdown/) based presentations: 
  - generated from [middleman](https://middlemanapp.com/)
  - rendered for slide shows with [remark](http://remarkjs.com/)
  - with responsive formatting via [bootstrap](http://v4-alpha.getbootstrap.com/)  
