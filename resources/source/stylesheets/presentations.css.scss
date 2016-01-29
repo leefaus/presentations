@@ -123,11 +123,16 @@ body {
   }
 }
 
+.full-screen {
+  margin: 20px;
+  padding-top: 75px;
+}
+
 .title-top {
   padding-top: 128px;
 
   .card-img-top {
-    text-align: center;
+    max-height: 75px;
     margin-bottom: 10px;
     .mega-octicon {
         font-size: 2.0em;
@@ -136,6 +141,7 @@ body {
 
   .card-title {
     text-align: center;
+
   }
 
   .card-block {
@@ -143,6 +149,10 @@ body {
       .label {
         margin: 3px;
       }
+    }
+
+    div.text-center {
+      text-align: center;
     }
   }
 
