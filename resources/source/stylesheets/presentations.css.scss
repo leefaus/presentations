@@ -90,6 +90,10 @@ body {
         }
     }
 
+    .twitter-logo {
+      max-height: 1.5em;
+    }
+
 
   }
 
@@ -117,6 +121,10 @@ body {
     // border: 10px solid $theme-octicon-color;
     // border-radius: 50%;
     color: $theme-octicon-color;
+  }
+
+  h1 {
+    font-size: 5em;
   }
 }
 
@@ -245,6 +253,7 @@ body {
   border-radius: 3px;
   border-top: 25px solid $theme-code-border-color;
   border-radius: 6px;
+  background-color: white;
 }
 
 pre {

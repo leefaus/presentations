@@ -7,37 +7,135 @@ title: Advanced GitHub
   class: title-slide
 
   <span class="mega-octicon octicon-mark-github"></span>
-  # Advanced GitHub
+  ## Extending GitHub for CI/CD Workflows
 
   <footer>
-    <div class="octicon-spacer"><span class="octicon octicon-logo-github"></span><span class="tagline">how people build software</span></div>
+    <div class="octicon-spacer"><span class="octicon octicon-logo-github"></span><span class="tagline">how people build software</span></div> &nbsp;|&nbsp;<img class="twitter-logo" src="/images/twitter.png"></img><a href="https://twitter.com/leefaus">@leefaus</a>&nbsp;<img class="twitter-logo" src="/images/twitter.png"><a href="https://twitter.com/github">@github</a>
+  </footer>
+  ---
+  class: title-slide
+
+  # Webhooks
+
+  ## Polling vs. Events
+
+  <footer>
+    <div class="octicon-spacer"><span class="octicon octicon-logo-github"></span><span class="tagline">how people build software</span></div> &nbsp;|&nbsp;<img class="twitter-logo" src="/images/twitter.png"></img><a href="https://twitter.com/leefaus">@leefaus</a>&nbsp;<img class="twitter-logo" src="/images/twitter.png"><a href="https://twitter.com/github">@github</a>
   </footer>
   ---
   class: title-top
 
-  # Our Offerings
+  # Webhook Events
 
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-12">
         <div class="card">
           <div class="card-block">
-            <div class="card-img-top text-center"><span class="mega-octicon octicon-logo-github"></span></div>
-            <div class="card-title"><a href="https://github.com" target="_blank"><h3>GitHub.com</h3></a></div>
-            <p class="card-text"><strong>GitHub.com</strong> is the <i>hosted</i> version of GitHub, which is fully managed for you in our datacenter.  We currently host over 20m repositories and 10m users in our infrastructure. <a href="https://enterprise.github.com/downloads/en/comvsenterprise-082415.pdf">Learn more ...</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-block">
-            <div class="card-img-top text-center"><span class="mega-octicon octicon-mark-github"></span> <span class="mega-octicon octicon-server"></span> <span class="mega-octicon octicon-database"></span></div>
-            <div class="card-title"><a href="https://enterprise.github.com" target="_blank"><h3>GitHub Enterprise</h3></a></div>
-            <p class="card-text"><strong>GitHub Enterprise</strong> is the <i>on-premises</i> version of GitHub, which you can deploy and manage in your own, secure environment. <a href="https://enterprise.github.com/downloads/en/comvsenterprise-082415.pdf">Learn more ...</a></p>
+            <div class="card-title"><a href="https://developer.github.com/webhooks/#events" target="_blank"><h2>Events</h2></a></div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  ```json
+  {
+    "ref": "refs/heads/changes",
+    "before": "9049f1265b7d61be4a8904a9a27120d2064dab3b",
+    "after": "0d1a26e67d8f5eaf1f6ba5c57fc3c7d91ac0fd1c",
+    "created": false,
+    "deleted": false,
+    "forced": false,
+    "base_ref": null,
+    "compare": "https://github.com/baxterthehacker/public-repo/compare/9049f1265b7d...0d1a26e67d8f",
+    "commits": ...
+  }
+  ```
+
+
+  <footer>
+    <div class="octicon-spacer"><span class="octicon octicon-logo-github"></span><span class="tagline">how people build software</span></div> &nbsp;|&nbsp;<img class="twitter-logo" src="/images/twitter.png"></img><a href="https://twitter.com/leefaus">@leefaus</a>&nbsp;<img class="twitter-logo" src="/images/twitter.png"><a href="https://twitter.com/github">@github</a>
+  </footer>
+  ---
+  class: title-slide
+
+  # Authentication
+
+  ## Three Schemes
+
+  <footer>
+    <div class="octicon-spacer"><span class="octicon octicon-logo-github"></span><span class="tagline">how people build software</span></div> &nbsp;|&nbsp;<img class="twitter-logo" src="/images/twitter.png"></img><a href="https://twitter.com/leefaus">@leefaus</a>&nbsp;<img class="twitter-logo" src="/images/twitter.png"><a href="https://twitter.com/github">@github</a>
+  </footer>
+  ---
+  class: title-slide
+
+  # API
+
+  ## Developing Add-ons
+
+  <footer>
+    <div class="octicon-spacer"><span class="octicon octicon-logo-github"></span><span class="tagline">how people build software</span></div> &nbsp;|&nbsp;<img class="twitter-logo" src="/images/twitter.png"></img><a href="https://twitter.com/leefaus">@leefaus</a>&nbsp;<img class="twitter-logo" src="/images/twitter.png"><a href="https://twitter.com/github">@github</a>
+  </footer>
+  ---
+  class: title-top
+
+  # Statuses and Deployments
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-block">
+            <div class="card-title"><a href="https://developer.github.com/v3/repos/statuses/#create-a-status" target="_blank"><h2>Status</h2></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  ```json
+  {
+    "state": "success",
+    "target_url": "https://example.com/build/status",
+    "description": "The build succeeded!",
+    "context": "continuous-integration/jenkins"
+  }
+  ```
+
+
+  <footer>
+    <div class="octicon-spacer"><span class="octicon octicon-logo-github"></span><span class="tagline">how people build software</span></div> &nbsp;|&nbsp;<img class="twitter-logo" src="/images/twitter.png"></img><a href="https://twitter.com/leefaus">@leefaus</a>&nbsp;<img class="twitter-logo" src="/images/twitter.png"><a href="https://twitter.com/github">@github</a>
+  </footer>
+
+  ---
+  class: title-top
+
+  # Statuses and Deployments
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-block">
+            <div class="card-title"><a href="https://developer.github.com/v3/repos/deployments/#create-a-deployment" target="_blank"><h2>Deployments</h2></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  ```json
+  {
+    "ref": "topic-branch",
+    "payload": "{\"user\":\"atmos\",\"room_id\":123456}",
+    "description": "Deploying my sweet branch"
+  }
+  ```
+
+
+  <footer>
+    <div class="octicon-spacer"><span class="octicon octicon-logo-github"></span><span class="tagline">how people build software</span></div> &nbsp;|&nbsp;<img class="twitter-logo" src="/images/twitter.png"></img><a href="https://twitter.com/leefaus">@leefaus</a>&nbsp;<img class="twitter-logo" src="/images/twitter.png"><a href="https://twitter.com/github">@github</a>
+  </footer>
 
 </textarea>
