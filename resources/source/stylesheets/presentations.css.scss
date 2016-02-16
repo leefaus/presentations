@@ -14,10 +14,22 @@ $theme-code-border-color: #D9DCDF;
 $theme-code-dots-color: #FFF;
 $theme-octicon-color: #52575E;
 
+
+.container {
+  margin-top: 2em;
+}
 .img-responsive {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.img-resize {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -102,8 +114,8 @@ body {
   .mega-octicon {
     font-size: 10em;
     padding: 10px;
-    border: 10px solid $theme-octicon-color;
-    border-radius: 50%;
+    // border: 10px solid $theme-octicon-color;
+    // border-radius: 50%;
     color: $theme-octicon-color;
   }
 }
@@ -117,8 +129,10 @@ body {
   }
 
   .mega-octicon {
-    float: left;
-    margin-left: -20%;
+    font-size: 10em;
+    padding: 10px;
+    border: 10px solid $theme-octicon-color;
+    border-radius: 50%;
     color: $theme-octicon-color;
   }
 }
@@ -129,7 +143,7 @@ body {
 }
 
 .title-top {
-  padding-top: 128px;
+  padding-top: 64px;
 
   .card-img-top {
     max-height: 75px;
@@ -170,10 +184,34 @@ body {
       float: right;
       padding: 18px;
       margin: -4px 0;
-
-      border: 1px solid $theme-border-color;
-      border-radius: 100%;
     }
+  }
+
+  .mega-octicon {
+    font-size: 10em;
+    padding: 10px;
+    color: $theme-octicon-color;
+  }
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  margin: 36px;
+  text-align: center;
+
+  .mega-octicon {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid $theme-border-color;
+    margin: -4px 0;
+    border-radius: 100%;
   }
 
   h2 {
